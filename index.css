@@ -36,7 +36,7 @@
 
     /* font size */
     --small-font-size: 0.9em;
-    --normal-font-size: 1em;
+    --normal-font-size: 2rem !important;
 
 
     /* scroll bar clrs */
@@ -75,7 +75,7 @@ video {
     font-family: 'Poppins', sans-serif;
     font: inherit;
     /* overflow: hidden; */
-    outline: 3px solid lightgreen !important; 
+    /* outline: 3px solid lightgreen !important;  */
     /* debugging css */
 }
 
@@ -161,7 +161,13 @@ a:hover {
     height: 50%;
 }
 
-.masa, .home-txt
+.masa h1 span
+{
+    margin-top:-150px;
+    font-size: var(--normal-font-size);
+}
+
+.home-txt
 {
     position:absolute;
     z-index: 9999;
@@ -314,9 +320,9 @@ section {
     align-items: center;
     background-color: yellow;
 }
-h1 span {
+.home h1 span {
     position:absolute;
-    font: 26px Monaco, MonoSpace;
+    /* font: 26px Monaco, MonoSpace; */
     height: 200px;
     position: absolute;
     width: 20px;
