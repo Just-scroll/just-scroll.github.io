@@ -7,6 +7,7 @@
     --third-color: #777;
     --h1-clr: #ccd6f6;
     --p-clr: #5defcf;
+    --home-clr:#ADE682;
 
     /* hvr clrs */
     --hover-color: rgb(126, 87, 194);
@@ -36,7 +37,7 @@
 
     /* font size */
     --small-font-size: 0.9em;
-    --normal-font-size: 2rem !important;
+    --normal-font-size: 2.4rem !important;
 
 
     /* scroll bar clrs */
@@ -84,29 +85,16 @@ h1 {
 }
 
 html {
+    
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* overflow-y: scroll; */
+    /* -webkit-overflow-scrolling:touch;    */
 }
-
-body {
-   width: 100vw;
-   height: 100vh;
-   margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
 /* scroll bar */
 
 ::-webkit-scrollbar {
@@ -131,26 +119,6 @@ li {
 
 /* header */
 
-h1,
-h2,
-h3,
-a,
-p,
-span {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: #F2F2F2;
-    margin: 0px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--hover-color);
-}
-
 .masa
 {
     z-index: 999;
@@ -163,7 +131,7 @@ a:hover {
 
 .masa h1 span
 {
-    margin-top:-150px;
+    margin-top:-175px;
     font-size: var(--normal-font-size);
 }
 
@@ -189,8 +157,8 @@ svg
     position:absolute;
     height: 100vh;
     width: 100vw;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
 }
 
 section {
@@ -288,17 +256,6 @@ section {
     justify-content: center;
     align-items: center;
     background-color: green;
-    transition: all 1s;
-}
-.mancare1
-{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-    transition: all 1s;
 }
 
 .mancare2
@@ -320,7 +277,41 @@ section {
     align-items: center;
     background-color: yellow;
 }
+
+.mancare4
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+
+}
+.mancare5
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+
 .home h1 span {
+    animation: background-pan 3s linear infinite;
+    background-size: 200%;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
     position:absolute;
     /* font: 26px Monaco, MonoSpace; */
     height: 200px;
@@ -335,7 +326,7 @@ section {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--home-clr);
 }
 .char1 { transform: rotate(-42deg); }
 .char2 { transform: rotate(-36deg); }
@@ -352,6 +343,36 @@ section {
 .char13{ transform: rotate(30deg); }
 .char14{ transform: rotate(36deg); }
 .char15{transform:rotate(42deg);}
+
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  @keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+  } 
 /* @keyframes centru1 {
     from
     {
@@ -389,3 +410,4 @@ section {
 .animate-class {
     animation: centru1 1s linear;
   }
+  
