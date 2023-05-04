@@ -18,7 +18,7 @@
     --pink: rgb(244,    143, 177);
 
     /* bgground clrs */
-    --body-bg-color: #060b19;
+    --body-bg-color: #150125;
     --card-bg-color: #fff;
     --modal-bg-color: #fff;
     --bg-transparent-color: rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@
 
     /* font size */
     --small-font-size: 0.9em;
-    --normal-font-size: 1.8rem !important;
+    --normal-font-size: 1.5rem !important;
     --big-font-size: 4rem;
     --ultra-big-font-size:8rem;
 
@@ -93,6 +93,16 @@ video {
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
+}
+
+h2, h3
+{
+    color: white;
+}
+
+.supa1, .supa2, .pasta1, .pasta2, .principal1, .principal2, .desert1, .desert2
+{
+    background-color: #150125;
 }
 
 html {
@@ -214,21 +224,14 @@ section{
     animation: animate-to-center 1s linear;
   }
   
-#farfurie1
+#farfurie1:hover
 {
     animation: papica 8s infinite linear;
     transform-origin: center;
     transform-box: fill-box;
 }
 
-#farfurie2
-{
-    animation: papica 8s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-#farfurie3
+#farfurie2:hover
 {
     animation: papica 8s infinite linear;
     transform-origin: center;
@@ -237,10 +240,17 @@ section{
 
 #farfurie3:hover
 {
-    animation-play-state: paused;
+    animation: papica 8s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
-#farfurie4
+#farfurie3:hover
+{
+    /* animation-play-state: paused; */
+}
+
+#farfurie4:hover
 {
     animation: papica 8s infinite linear;
     transform-origin: center;
@@ -249,10 +259,10 @@ section{
 
 #farfurie4:hover
 {
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 
-#farfurie5
+#farfurie5:hover
 {
     animation: papica 8s infinite linear;
     transform-origin: center;
@@ -261,7 +271,7 @@ section{
 
 #farfurie5:hover
 {
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 
 @keyframes papica {
@@ -282,7 +292,7 @@ section{
     /* height: 100vh; */
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: #68CA8E;
 }
 
 .mancare2
@@ -292,7 +302,7 @@ section{
     /* height: 100vh; */
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #2EAA94;
 }
 
 .mancare3
@@ -302,7 +312,7 @@ section{
     /* height: 100vh; */
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: #0F898D;
 }
 
 .mancare4
@@ -312,7 +322,7 @@ section{
     /* height: 100%; */
     justify-content: center;
     align-items: center;
-    background-color: salmon;
+    /* background-color: #246878; */
 
 }
 .mancare5
@@ -322,7 +332,7 @@ section{
     /* height: 100%; */
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #246878;
 
 }
 
@@ -535,7 +545,7 @@ a:link
 
 #nav-link-section {
     flex-basis: 50%;
-    gap: 8rem;
+    gap: 10rem;
 }
 
 .title
@@ -548,7 +558,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    background-color: #150125;
 }
 
 .title-small-1
@@ -588,7 +598,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    /* background-color: #73F289; */
 }
 
 .title-small-2
@@ -628,7 +638,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    /* background-color: #73F289; */
 }
 
 .title-small-2
@@ -668,7 +678,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    /* background-color: #73F289; */
 }
 
 .title-small-2
@@ -708,7 +718,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    /* background-color: #73F289; */
 }
 
 .title-small-2
@@ -748,7 +758,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    /* background-color: #73F289; */
 }
 
 .title-small-2
@@ -868,7 +878,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    /* background-color: #73F289; */
 }
 
 .title-small-2
@@ -908,7 +918,7 @@ a:link
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #73F289;
+    /* background-color: #73F289; */
 }
 
 .title-small-2
@@ -946,7 +956,7 @@ a:link
 .contact {
     max-height: 100%;
     height: 100vh;
-    background-color: #454f6b;
+    background-color: #2F4858;
     display: grid;
 }
 
