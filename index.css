@@ -990,20 +990,20 @@ a:link
     height: 20px;
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 12px;
+    margin: 15px;
     color: #5defcf;
     gap: 1rem;
 }
 
-.links .fa-linkedin:hover {
-    color: #0a66c2;
+.links .fa-graduation-cap:hover {
+    color: var(--hover-color);
 }
 
 .links .fa-github:hover {
     color: var(--hover-color);
 }
 
-.links .fa-codepen:hover {
+.links .fa-unsplash:hover {
     color: var(--hover-color);
 }
 
